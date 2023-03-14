@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mukta');
+@import url('https://fonts.googleapis.com/css?family=Recursive:Extra-bold,800');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*===== SCROLLBAR =====*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #EAEAEA;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg,#B7B7B7,#B7B7B7);
+  border-radius: 10px;
+}
+body * {
+  text-align: center;
+  margin: 0 auto;
+  font-family: Poppins;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.nv {
+  max-width: 600px;
+}
+.t {
+  margin-top: 30px;
+  max-width: 1500px;
+}
+.box {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  border: 1.5px solid rgba(0,0,0,0.1);
+  border-radius: 30px;
+}
+.box button {
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    min-height: 20px;
+    font-size: 20px;
+    color: #007bff;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+.box button:hover {
+  background: #007bff;
+  color: #fff;
+}
+h2 {
+  padding: 40px 40px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Recursive";
+}
+input[type="text"], input[type="number"] {
+  box-sizing: border-box;
+  font-family: "Mukta";
+  font-size: 17px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 5px 5px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #E4E4E4;
+  -webkit-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+select {
+  font-size: 15px;
+  max-width: 350px;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 25px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #D3D3D3;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+}
+select:hover, .target:hover, .target:focus, input[type='number']:hover, input[type='number']:focus {
+  border: 2px solid #007bff;
+}
+.calc {
+  flex-wrap: wrap;
+  gap:20px;
+}
+.calc > * {
+  padding: 10px;
+  gap: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #D3D3D3;
+}
+h3 {
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+.attach {
+  position: relative;
+  display: table;
+  margin-bottom: 10px;
+}
+.attach h4 {
+  display: table-cell;
+  width: 150px;
+}
+.attach input {
+  display: table-cell;
+}
+@media only screen and (max-width: 768px) {
+  .sc {
+    flex-direction: column;
+  }
+}
+.tr {
+  margin-bottom: 30px;
+}
+.attach input[type="checkbox"] {
+  position: absolute;
+  top: 14px;
+}
+.status {
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 2rem;
+  color: #FFF;
+  padding: 10px 10px;
+  background-color: #6E6E6E;
+}
